@@ -19,6 +19,9 @@ body {
   body::-webkit-scrollbar-thumb{
     background-color: var(--clr-black);
   }
+  @media (prefers-color-scheme: dark) {
+
+  }
 /*      HOME CONTAINER     */
 
 .home{
