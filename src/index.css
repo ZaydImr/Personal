@@ -2,39 +2,113 @@
 :root{
   --clr-white : #fff;
   --clr-black : #233149;
-  --primary-clr : #1fa78f;
+  --primary-clr : #1f5ca7;
+  --mw-14: 1140px;
+  --mw-96:960px
 }
+/*      BODY    */
 body {
   margin: 0;
   font-family: open sans,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  background-color: var(--primary-clr);
-  background-image: linear-gradient( 70deg , var(--clr-white) 0%, var(--clr-white) 50%, var(--primary-clr) 48%, var(--primary-clr) 60%);
-}
+  }
+  body::-webkit-scrollbar{
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: var(--clr-black);
+  }
+/*      HOME CONTAINER     */
 
+.home{
+  height: 100vh;
+  overflow: hidden;
+    position: relative;
+}
+.home .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+.home .back::before{
+    position: absolute;
+    content: '';
+    width: 150%;
+    height: 100%;
+    background-color: var(--primary-clr);
+    transform: skewX(20deg);
+    top: 0;
+    left: 0;
+}
+.container{
+  margin: auto;
+  width: 100%;
+  height: 90vh;
+  max-width: var(--mw-14);
+  display: flex;
+  position: relative;
+  top: 10vh;
+}
+.container>div{
+  width: 50%;
+}
+.home-image img{
+    height: 100%;
+    max-height: 600px;
+    bottom: 0;
+    position: absolute;
+}
+/*      NAVBAR     */
 nav{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+.navbar{
   padding: 25px 0;
-  width: 90%;
-  max-width: 1170px;
+  max-width: var(--mw-14);
   display:flex;
   justify-content: space-around;
-  
   margin: auto;
   font-weight: 600;
+  width: 90%;
 }
 nav .logo{
   font-size: 1.5rem;
-  color: var(--clr-black);
+  text-decoration: none;
+  color: var(--primary-clr);
   display: flex;
   align-items: center;
 }
+nav .logo img{
+  transition: .3s;
+  height: 22px;
+}
+nav .logo img:hover{
+  height: 26px;
+}
 nav ul{
-  color: var(--clr-white);
+  
   display: flex;
   list-style: none;
 }
-nav ul li{
+nav ul a{
   padding: 0 1rem;
+  text-decoration: none;
+  color: var(--clr-white);
+  transition: .3s;
+}
+nav ul a:hover{
+  font-size: 18px;
+  padding: 0 1.5rem;
+  color: var(--clr-white);
+}
+/*      ABOUT     */
+.About{
+  align-items: center;
+  height: 100vh;
 }
