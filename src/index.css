@@ -9,6 +9,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: 'montserrat';
 }
 /*      BODY    */
 body {
@@ -27,8 +28,9 @@ body {
 /*      HOME CONTAINER     */
 
 .home{
-  height: 100vh;
-  overflow: hidden;
+  z-index: 2;
+  background: whitesmoke;
+    overflow: hidden;
     position: relative;
     font-family: montserrat,sans-serif;
 }
@@ -53,31 +55,29 @@ body {
 .container{
   margin: auto;
   width: 80%;
-  height: 90vh;
   max-width: var(--mw-14);
   display: flex;
   position: relative;
-  top: 10vh;
+  padding-top: 120px;
 }
-.container>div{
+.Home .container>div{
   width: 50%;
 }
 .home-image img{
-    height: 100%;
-    max-height: 600px;
-    bottom: 0;
-    position: absolute;
+    height: 600px;
+    top: 4px;
+    position: relative;
 }
 .home .social{
   position: absolute;
     display: flex;
     flex-direction: column;
-    top: 37vh;
+    top: 30%;
     left: 20px;
     background: whitesmoke;
     width: 41px;
     text-align: center;
-    padding: 1rem 0;
+    padding: .5rem 0;
     border-radius: 50px;
     font-size: 1.3rem;
     border: 1px solid var(--primary-clr);
@@ -86,6 +86,7 @@ body {
   text-decoration: none;
   color: var(--primary-clr);
   transition: .3s;
+  padding: .5rem 0;
 }
 .home .social a:hover{
   color: var(--clr-black);
@@ -113,6 +114,7 @@ body {
   margin-top: 15px;
 }
 .home-content input{
+  cursor: pointer;
   font-family: montserrat,sans-serif;
   margin-top: 30px;
   font-weight: 600;
@@ -122,6 +124,12 @@ body {
   background-color: var(--primary-clr);
   color: var(--clr-white);
   font-size: 16px;
+  transition: .3s;
+}
+.home-content input:hover{
+  background-color: var(--clr-black);
+  padding: 22px 45px;
+  font-size: 19px;
 }
 /*      NAVBAR     */
 nav{
@@ -150,10 +158,10 @@ nav .logo{
 }
 nav .logo img{
   transition: .3s;
-  height: 22px;
+  height: 26px;
 }
 nav .logo img:hover{
-  height: 26px;
+  height: 30px;
 }
 nav ul{
   
@@ -173,8 +181,74 @@ nav ul a:hover{
 }
 /*      ABOUT     */
 .About{
-  align-items: center;
-  height: 100vh;
+  padding: 70px 0;
+}
+.About .container{
+  flex-direction: column;
+}
+.About .info h5{
+  color: var(--primary-clr);
+  font-size: 20px;
+  font-weight: 600;
+}
+.About .info h3{
+  color: var(--clr-black);
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.About .line{
+  padding-top: 10px;
+}
+.About .line li{
+  display: inline-block;
+  background-color: var(--primary-clr);
+  border-radius: 50px;
+  height: 3px;
+}
+.About .line li:nth-last-of-type(3){width: 64px;}
+.About .line li:nth-last-of-type(2){width: 10px; margin: 0 4px;}
+.About .line li:nth-last-of-type(1){width: 7px;}
+.About p{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #646f87;
+}
+.about-skills{
+  padding-top: 15px;
+}
+.skill-item{
+  margin-top: 20px;
+}
+.skill-header{
+  position: relative;
+}
+.skill-header h6{
+  font-size: 16px;
+  font-weight: 500;
+}
+.skill-header p{
+  position: absolute;
+    top: -3px;
+    font-size: 14px;
+    right: 0;
+}
+.skill-bar{
+  margin-top: 15px;
+  width: 100%;
+  height: 9px;
+  border-radius: 5px;
+  background-color: rgba(100,111,135,.11);
+  position: relative;
+}
+.progress-line{
+  position: absolute;
+  height: 9px;
+  border-radius: 5px;
+  background-color: var(--primary-clr);
+  transition: all 2s ease-out 0s;
 }
 @media screen and (max-width:750px) {
   nav{
