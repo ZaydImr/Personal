@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../logo.png'
+import {FaBars} from 'react-icons/fa'
 
 const Navbar = () => {
       return (
@@ -14,6 +15,7 @@ const Navbar = () => {
                               <li><a href='/#Projects'>Projects</a></li>
                               <li><a href='/#Experience'>Experience</a></li>
                         </ul>
+                        <button type="button"><FaBars/></button>
                   </div>
                   
             </nav>

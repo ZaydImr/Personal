@@ -1,10 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap";
 :root{
-  --clr-white : #fff;
+  --clr-white :#fdfdfd;
   --clr-black : #233149;
   --primary-clr : #1f5ca7;
   --mw-14: 1140px;
   --mw-96:960px
+}
+*{
+  padding: 0;
+  margin: 0;
 }
 /*      BODY    */
 body {
@@ -26,6 +30,7 @@ body {
   height: 100vh;
   overflow: hidden;
     position: relative;
+    font-family: montserrat,sans-serif;
 }
 .home .back {
   position: absolute;
@@ -47,7 +52,7 @@ body {
 }
 .container{
   margin: auto;
-  width: 100%;
+  width: 80%;
   height: 90vh;
   max-width: var(--mw-14);
   display: flex;
@@ -63,6 +68,61 @@ body {
     bottom: 0;
     position: absolute;
 }
+.home .social{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 37vh;
+    left: 20px;
+    background: whitesmoke;
+    width: 41px;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    border: 1px solid var(--primary-clr);
+}
+.home .social a{
+  text-decoration: none;
+  color: var(--primary-clr);
+  transition: .3s;
+}
+.home .social a:hover{
+  color: var(--clr-black);
+  font-size: 1.7rem;
+}
+.home .home-content{
+  display: flex;
+  align-items: center;
+}
+.home-content .content {
+  font-size: 2rem;
+  display: block;
+}
+.home-content h4{
+  font-weight: 600;
+  color: var(--primary-clr);
+}
+.home-content h2{
+  padding-top: 20px;
+  color: var(--clr-black);
+}
+.home-content span{
+  font-size: 18px;
+  color: var(--clr-black);
+  margin-top: 15px;
+}
+.home-content input{
+  font-family: montserrat,sans-serif;
+  margin-top: 30px;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--primary-clr);
+  color: var(--clr-white);
+  font-size: 16px;
+}
 /*      NAVBAR     */
 nav{
   z-index: 1;
@@ -77,6 +137,9 @@ nav{
   margin: auto;
   font-weight: 600;
   width: 90%;
+}
+.navbar button{
+  display: none;
 }
 nav .logo{
   font-size: 1.5rem;
@@ -112,4 +175,43 @@ nav ul a:hover{
 .About{
   align-items: center;
   height: 100vh;
+}
+@media screen and (max-width:750px) {
+  nav{
+    background-color: var(--primary-clr);
+  }
+  .navbar{
+    display: block;
+    padding: 10px;
+  }
+  .navbar ul{
+    padding-top: 1rem;
+    display: block;
+  }
+  .navbar ul a{
+    padding: 1rem 0;
+    display: inline-block;
+  }
+  .navbar button{
+    display: unset;
+  }
+  .home .container{
+    flex-direction: column;
+  } 
+  .home .container>div{
+    width: unset;
+    height: 50%;
+  }
+  .home .home-image{
+    text-align: center;
+  }
+  .home .home-image img{
+    height: 100%;
+    max-height: unset;
+    position: unset;
+  }
+  .home .back::before{
+    content: unset;
+  }
+
 }
