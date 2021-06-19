@@ -60,7 +60,7 @@ body {
   position: relative;
   padding-top: 120px;
 }
-.Home .container>div{
+.home .container>div{
   width: 50%;
 }
 .home-image img{
@@ -95,6 +95,7 @@ body {
 .home .home-content{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .home-content .content {
   font-size: 2rem;
@@ -182,6 +183,11 @@ nav ul a:hover{
 /*      ABOUT     */
 .About{
   padding: 70px 0;
+  display: flex;
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  gap: 2rem;
 }
 .About .container{
   flex-direction: column;

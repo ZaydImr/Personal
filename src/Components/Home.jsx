@@ -1,5 +1,5 @@
 import React from 'react'
-import MyLove from '../WithMyLove.png'
+import MyLove from '../DSC_0002.png'
 import Navbar from './Navbar';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
