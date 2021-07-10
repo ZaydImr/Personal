@@ -1,6 +1,7 @@
 import React from 'react'
 import MyLove from '../DSC_0002.png'
 import Navbar from './Navbar';
+import { Link } from "react-scroll";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
                               <a target='_blank' href='https://www.linkedin.com/in/zaydimr/'><FaLinkedin/></a>
                               <a target='_blank' href='https://github.com/ZaydImr'><FaGithub/></a>
                               <a target='_blank' href='https://www.instagram.com/zayd.imr/'><FaInstagram/></a>
-                              <a target='_blank' href='https://www.facebook.com/Zayd.imr/'><FaFacebook/></a>
+                              <a target='_blank' href='https://www.facebook.com/Zayd.imr/' style={{paddingBottom:0}}><FaFacebook/></a>
                   </div>
                   <div className="container">
                         <div className="home-content">
@@ -19,9 +20,9 @@ const Home = () => {
                                     <h4>Hello I'm</h4>
                                     <h2>Zayd EL IMRANI</h2>
                                     <span>Software development technician</span><br/>
-                                    <a href="/#About">
+                                    <Link to="About" smooth='true'>
                                           <input type="button" value="About me"/>
-                                    </a>
+                                    </Link>
                               </div>
                               </div>
                         <div className="home-image">

@@ -52,13 +52,15 @@ body {
     top: 0;
     left: 0;
 }
+.home .container{
+  padding-top: 120px;
+}
 .container{
   margin: auto;
   width: 80%;
   max-width: var(--mw-14);
   display: flex;
   position: relative;
-  padding-top: 120px;
 }
 .home .container>div{
   width: 50%;
@@ -68,11 +70,14 @@ body {
     top: 4px;
     position: relative;
 }
+.navbar a{
+  cursor: pointer;
+}
 .home .social{
-  position: absolute;
+  position: fixed;
     display: flex;
     flex-direction: column;
-    top: 30%;
+    top: 35%;
     left: 20px;
     background: whitesmoke;
     width: 41px;
@@ -106,8 +111,9 @@ body {
   color: var(--primary-clr);
 }
 .home-content h2{
-  padding-top: 20px;
+  padding-top: 10px;
   color: var(--clr-black);
+  font-size: 2.5rem;
 }
 .home-content span{
   font-size: 18px;
@@ -158,6 +164,7 @@ nav .logo{
   align-items: center;
 }
 nav .logo img{
+  display: none;
   transition: .3s;
   height: 26px;
 }
@@ -183,28 +190,27 @@ nav ul a:hover{
 /*      ABOUT     */
 .About{
   padding: 70px 0;
-  display: flex;
   width: 80%;
   max-width: 1100px;
   margin: auto;
+}
+.flex{
+  display: flex;
   gap: 2rem;
 }
 .About .container{
   flex-direction: column;
 }
-.About .info h5{
+.About h5{
   color: var(--primary-clr);
+  font-size: 30px;
+    font-weight: 600;
+}
+.About  h3{
+  color: var(--clr-black);
   font-size: 20px;
   font-weight: 600;
-}
-.About .info h3{
-  color: var(--clr-black);
-  font-size: 35px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-.About .line{
-  padding-top: 10px;
+  margin-top: 30px;
 }
 .About .line li{
   display: inline-block;
@@ -212,9 +218,9 @@ nav ul a:hover{
   border-radius: 50px;
   height: 3px;
 }
-.About .line li:nth-last-of-type(3){width: 64px;}
-.About .line li:nth-last-of-type(2){width: 10px; margin: 0 4px;}
-.About .line li:nth-last-of-type(1){width: 7px;}
+.About .line li:nth-last-of-type(3){width: 30px;}
+.About .line li:nth-last-of-type(2){width: 8px; margin: 0 4px;}
+.About .line li:nth-last-of-type(1){width: 6px;}
 .About p{
   margin-top: 10px;
   font-size: 16px;

@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../logo.png'
 import {FaBars} from 'react-icons/fa'
+import { Link,animateScroll as scroll } from 'react-scroll'
 
 const Navbar = () => {
       return (
@@ -10,10 +11,10 @@ const Navbar = () => {
                               <img src={logo} alt='Zayd EL IMRANI'/>
                         </a>
                         <ul>
-                              <li><a href='/#'>Home</a></li>
-                              <li><a href='/#About'>About</a></li>
-                              <li><a href='/#Projects'>Projects</a></li>
-                              <li><a href='/#Experience'>Experience</a></li>
+                              <li><a onClick={()=>scroll.scrollToTop()}>Home</a></li>
+                              <li><Link to='About' smooth='true'>About</Link></li>
+                              <li><Link to='Experience' smooth='true'>Experience</Link></li>
+                              <li><Link to='Projects' smooth='true'>Projects</Link></li>
                         </ul>
                         <button type="button"><FaBars/></button>
                   </div>
