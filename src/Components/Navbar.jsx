@@ -11,7 +11,7 @@ const Navbar = () => {
                               <img src={logo} alt='Zayd EL IMRANI'/>
                         </a>
                         <ul>
-                              <li><a onClick={()=>scroll.scrollToTop()}>Home</a></li>
+                              <li><a onClick={()=>scroll.scrollToTop()}>Homee</a></li>
                               <li><Link to='About' smooth='true'>About</Link></li>
                               <li><Link to='Experience' smooth='true'>Experience</Link></li>
                               <li><Link to='Projects' smooth='true'>Projects</Link></li>
