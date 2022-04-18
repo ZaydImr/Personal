@@ -49,6 +49,10 @@ nav ul a {
     transition: .3s;
 }
 
+.nav-link{
+    cursor: pointer;
+}
+
 .navbar-fixed ul a {
     color: var(--primary-clr);
 }
