@@ -1,0 +1,147 @@
+/*      HOME CONTAINER     */
+
+.home {
+    z-index: 2;
+    background: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    font-family: montserrat, sans-serif;
+}
+
+.home .back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.home .back::before {
+    position: absolute;
+    content: '';
+    width: 150%;
+    height: 100%;
+    background-color: var(--primary-clr);
+    transform: skewX(20deg);
+    top: 0;
+    left: 0;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    max-width: var(--mw-14);
+    display: flex;
+    position: relative;
+    padding-top: 120px;
+}
+
+.home .container>div {
+    width: 50%;
+}
+
+.home-image img {
+    height: 600px;
+    top: 4px;
+    position: relative;
+}
+
+.home .social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 20px;
+    background: whitesmoke;
+    width: 41px;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    border: 1px solid var(--primary-clr);
+}
+
+.home .social a {
+    text-decoration: none;
+    color: var(--primary-clr);
+    transition: .3s;
+    padding: .5rem 0;
+}
+
+.home .social a:hover {
+    color: var(--clr-black);
+    font-size: 1.7rem;
+}
+
+.home .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content .content {
+    font-size: 2rem;
+    display: block;
+}
+
+.home-content h4 {
+    font-weight: 600;
+    color: var(--primary-clr);
+}
+
+.home-content h2 {
+    padding-top: 20px;
+    color: var(--clr-black);
+}
+
+.home-content span {
+    font-size: 18px;
+    color: var(--clr-black);
+    margin-top: 15px;
+}
+
+.home-content input {
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+    margin-top: 30px;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--primary-clr);
+    color: var(--clr-white);
+    font-size: 16px;
+    transition: .3s;
+}
+
+.home-content input:hover {
+    background-color: var(--clr-black);
+    padding: 22px 45px;
+    font-size: 19px;
+}
+
+.span_content {
+    font-size: medium;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+.social-link .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: medium;
+    left: 48px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.social-link:hover .tooltiptext {
+    visibility: visible;
+}
