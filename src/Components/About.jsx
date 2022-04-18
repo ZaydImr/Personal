@@ -1,5 +1,4 @@
 import React from 'react'
-import { IconBase } from 'react-icons';
 import { FaAngular, FaReact, FaNodeJs } from 'react-icons/fa'
 import '../assets/about.css'
 
@@ -11,7 +10,7 @@ const About = () => {
       const skills = [
             { title: 'Angular', icon: FaAngular, percentage: 85, color: '#B52E31' },
             { title: 'React', icon: FaReact, percentage: 70 },
-            { title: 'NodeJs', icon: FaNodeJs, percentage: 85, color:'#68a063' },
+            { title: 'NodeJs', icon: FaNodeJs, percentage: 85, color: '#68a063' },
       ]
 
       return (
@@ -46,23 +45,22 @@ const About = () => {
                                           skills.map((skill, index) => {
                                                 const Icon = skill.icon;
                                                 return (
-                                                <div className="about-skills" >
-                                                      <div className="skill-item">
-                                                            <div className='skill-header'>
-                                                                  <h6>{skill.icon && <Icon color={skill.color} />} {skill.title}</h6>
-                                                                  <p>{skill.percentage}%</p>
-                                                            </div>
-                                                            <div className='skill-bar'>
-                                                                  <div className='progress-line' style={{ width: (skill.percentage + '%'), backgroundColor: skill.color }}></div>
+                                                      <div className="about-skills" >
+                                                            <div className="skill-item">
+                                                                  <div className='skill-header'>
+                                                                        <h6>{skill.icon && <Icon color={skill.color} />} {skill.title}</h6>
+                                                                        <p>{skill.percentage}%</p>
+                                                                  </div>
+                                                                  <div className='skill-bar'>
+                                                                        <div className='progress-line' style={{ width: (skill.percentage + '%'), backgroundColor: skill.color }}></div>
+                                                                  </div>
                                                             </div>
                                                       </div>
-                                                </div>
-                                          )})
+                                                )
+                                          })
                                     }
                               </div>
                         </div>
-
-
                   </div>
             </div>
       )
