@@ -21,6 +21,10 @@
     font-weight: 600;
 }
 
+.about .me{
+    padding: 1rem 0;
+}
+
 .about .me p{
     color: var(--clr-black);
 }

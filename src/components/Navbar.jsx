@@ -28,7 +28,7 @@ const Navbar = () => {
                               <img src={logo} alt='Zayd EL IMRANI'/>
                         </a>
                         <ul>
-                              <li><a href='#' onClick={()=>scroll.scrollToTop()} className='nav-link'>Home</a></li>
+                              <li><Link to='' smooth='true' onClick={()=>scroll.scrollToTop()} className='nav-link'>Home</Link></li>
                               <li><Link to='About' smooth='true' className='nav-link'>About</Link></li>
                               <li><Link to='Experience' smooth='true' className='nav-link'>Experience</Link></li>
                               <li><Link to='Projects' smooth='true' className='nav-link'>Projects</Link></li>
