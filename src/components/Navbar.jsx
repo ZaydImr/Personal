@@ -30,9 +30,10 @@ const Navbar = () => {
                         <ul>
                               <li><Link to='' smooth='true' onClick={()=>scroll.scrollToTop()} className='nav-link'>Home</Link></li>
                               <li><Link to='About' smooth='true' className='nav-link'>About</Link></li>
-                              <li><Link to='Experience' smooth='true' className='nav-link'>Experience</Link></li>
-                              <li><Link to='Projects' smooth='true' className='nav-link'>Projects</Link></li>
-                              <li><Link to='Contact' smooth='true' className='nav-link'>Contact</Link></li>
+                              <li><Link to='NotFinished' smooth='true' className='nav-link'>Experience</Link></li>
+                              <li><Link to='NotFinished' smooth='true' className='nav-link'>Projects</Link></li>
+                              <li><Link to='NotFinished' smooth='true' className='nav-link'>Certifications</Link></li>
+                              <li><Link to='NotFinished' smooth='true' className='nav-link'>Contact</Link></li>
                         </ul>
                         <button type="button"><FaBars/></button>
                   </div>

@@ -26,3 +26,11 @@ body {
     background-color: var(--clr-black);
   }
 
+.not-finished a {
+    color: var(--primary-clr);
+    font-weight: 600;
+    padding: 0.5rem;
+}
+.not-finished a:hover {
+  color: var(--clr-black);
+}
