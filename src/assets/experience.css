@@ -1,4 +1,49 @@
-.experiences{
+/* EXPERIENCE */
+
+.experiences {
+    padding: .5rem 1rem;
+}
+
+.experience-pro {
+    padding-top: 1rem;
+}
+
+.experience-pro h4 {
+    font-size: 17px;
+}
+
+.experience-pro .company {
+    font-size: 15px;
+    margin-top: .5rem;
+    color: var(--primary-clr);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.experience-pro .company:hover {
+    color: var(--clr-black);
+}
+
+.experience-pro .date {
+    font-size: 15px;
+    color: #6a8285;
+}
+
+.experience-pro p {
+    margin-top: .5rem;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+.project {
     padding: 1rem;
-    padding-bottom: 0;
+    border: 1px solid var(--primary-clr);
+    border-radius: 7px;
 }

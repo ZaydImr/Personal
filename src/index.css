@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
   max-width: var(--mw-14);
   display: flex;
   position: relative;
-  padding: 35px 0;
+  padding-top: 70px;
 }
 
 
