@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { addDoc, collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase/config';
 
 
@@ -7,21 +7,19 @@ const ExperiencePro = () => {
 
     const [experiences, setExperiences] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
 
         // experiences.forEach(experience=>{
         //     console.log(experience);
         //     addDoc(collection(db, 'experiences'), experience);
         // })
 
-        getDocs(collection(db,'experiences'))
-            .then(res=>{
+        getDocs(collection(db, 'experiences'))
+            .then(res => {
                 setExperiences(res.docs.map(item => item.data()));
             })
-        
-    },[]);
 
-    
+    }, []);
 
     return (
         <div className="experiences">

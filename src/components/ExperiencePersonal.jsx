@@ -11,8 +11,8 @@ const ExperiencePro = () => {
     return (
         <div className="projects">
             {
-                projects.map(project =>
-                    <div className="project">
+                projects.map((project, index) =>
+                    <div key={index} className="project">
                         <h4>{project.title}</h4>
 
                         <p>{project.description}</p>
