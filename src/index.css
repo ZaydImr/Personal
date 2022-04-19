@@ -1,36 +1,87 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap";
-:root{
-  --clr-white :#fdfdfd;
-  --clr-black : #233149;
-  --primary-clr : #1f5ca7;
+
+:root {
+  --clr-white: #fdfdfd;
+  --clr-black: #233149;
+  --primary-clr: #1f5ca7;
   --mw-14: 1140px;
-  --mw-96:960px
+  --mw-96: 960px
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
   font-family: 'montserrat';
 }
+
 /*      BODY    */
 body {
   margin: 0;
-  font-family: open sans,sans-serif;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  font-family: open sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: var(--clr-white);
-  }
-  body::-webkit-scrollbar{
-    width: 10px;
-  }
-  body::-webkit-scrollbar-thumb{
-    background-color: var(--clr-black);
-  }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-black);
+}
+
+/*  SHARED  */
+
+.container {
+  margin: auto;
+  width: 60%;
+  max-width: var(--mw-14);
+  display: flex;
+  position: relative;
+  padding: 35px 0;
+}
+
+
+.info h5 {
+  color: var(--primary-clr);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info h3 {
+  color: var(--clr-black);
+  font-size: xx-large;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.line li {
+  display: inline-block;
+  background-color: var(--primary-clr);
+  border-radius: 50px;
+  height: 3px;
+}
+
+.line li:nth-last-of-type(3) {
+  width: 64px;
+}
+
+.line li:nth-last-of-type(2) {
+  width: 10px;
+  margin: 0 4px;
+}
+
+.line li:nth-last-of-type(1) {
+  width: 7px;
+}
 
 .not-finished a {
-    color: var(--primary-clr);
-    font-weight: 600;
-    padding: 0.5rem;
+  color: var(--primary-clr);
+  font-weight: 600;
+  padding: 0.5rem;
 }
+
 .not-finished a:hover {
   color: var(--clr-black);
 }

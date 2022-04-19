@@ -1,9 +1,6 @@
 /*      About     */
 .about {
-    padding: 70px 0;
     display: flex;
-    width: 80%;
-    max-width: 1100px;
     margin: auto;
     gap: 2rem;
 }
@@ -15,11 +12,6 @@
     flex-flow: wrap;
 }
 
-.about .info h5 {
-    color: var(--primary-clr);
-    font-size: 20px;
-    font-weight: 600;
-}
 
 .about .me{
     padding: 1rem 0;
@@ -37,33 +29,6 @@
 }
 .about .me a:hover {
     color: var(--clr-black);
-}
-
-.about .info h3 {
-    color: var(--clr-black);
-    font-size: xx-large;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.about .line li {
-    display: inline-block;
-    background-color: var(--primary-clr);
-    border-radius: 50px;
-    height: 3px;
-}
-
-.about .line li:nth-last-of-type(3) {
-    width: 64px;
-}
-
-.about .line li:nth-last-of-type(2) {
-    width: 10px;
-    margin: 0 4px;
-}
-
-.about .line li:nth-last-of-type(1) {
-    width: 7px;
 }
 
 .about p {
