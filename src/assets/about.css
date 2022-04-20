@@ -5,7 +5,7 @@
     gap: 2rem;
 }
 
-.about .skills{
+.about .skills {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -13,11 +13,11 @@
 }
 
 
-.about .me{
+.about .me {
     padding: 1rem 0;
 }
 
-.about .me p{
+.about .me p {
     color: var(--clr-black);
     text-align: justify;
 }
@@ -28,6 +28,7 @@
     padding: .5rem;
     text-decoration: none;
 }
+
 .about .me a:hover {
     color: var(--clr-black);
 }
@@ -96,68 +97,78 @@
         display: none;
         background-color: var(--primary-clr);
     }
-  
+
     .navbar {
         display: block;
         padding: 10px;
     }
-  
+
     .navbar ul {
         padding-top: 1rem;
         display: block;
     }
-  
+
     .navbar ul a {
         padding: 1rem 0;
         display: inline-block;
     }
-  
+
     .navbar button {
         display: unset;
     }
 
-    .container{
+    .container {
         width: 80%;
     }
 
-    .home-content input{
+    .home-content input {
         padding: 14px 24px;
     }
 
-    .home-content input:hover{
+    .home-content input:hover {
         padding: 14px 24px;
         font-size: 16px;
     }
-  
+
     .home .container {
         padding-top: 35px;
         flex-direction: column;
     }
-  
+
     .home .container>div {
         width: unset;
         height: 50%;
     }
-  
+
     .home .home-image {
         text-align: center;
     }
-  
+
     .home .home-image img {
         height: 40vh;
         max-height: unset;
         position: relative;
         right: -40px;
     }
-  
+
     .home .back::before {
         width: 320%;
         transform: skewX(310deg);
         top: 76px;
     }
-  
+
     .about-skills {
         flex-basis: 100%;
     }
-  
-  }
+
+    .footDev {
+        display: grid !important;
+        gap: 0.1rem !important;
+        font-size: 14px;
+    }
+
+    .footDev #devStyle {
+        display: none;
+    }
+
+}
