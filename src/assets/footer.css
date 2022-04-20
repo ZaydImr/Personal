@@ -1,0 +1,100 @@
+footer {
+    padding: 1.5rem;
+    position: static;
+    bottom: 0;
+    text-align: center;
+    background-color: #151c32;
+    color: whitesmoke;
+}
+
+
+footer h2 {
+    color: #00aeef;
+}
+
+
+.contact_frm {
+    width: 90%;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_frm svg {
+    width: 50px;
+}
+
+.contact_frm table {
+    display: grid;
+    justify-content: center;
+    gap: 7px;
+    margin: 7px 0;
+}
+
+.contact_frm form {
+    margin-top: 1rem;
+}
+
+.contact_frm input[type=text],
+.contact_frm input[type=email],
+.contact_frm textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    width: 90%;
+    color: #222;
+    font-size: 1rem;
+}
+
+.btn_send {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    background-color: #00aeef;
+    color: #fff;
+    max-width: 200px;
+    cursor: pointer;
+    border: 0;
+}
+
+.btn_send:hover {
+    color: #000;
+}
+
+.btn_valid {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    background-color: #00ef55;
+    color: var(--clr-black);
+    max-width: 200px;
+}
+
+.btn_sending {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    background-color: #b3bec2;
+    max-width: 200px;
+}
+
+
+.footline {
+    height: 2px;
+    width: 90%;
+    background-color: #00aeef;
+    margin: 1.5rem auto;
+    max-width: 1170px;
+}
+
+.footDev p {
+    color: whitesmoke;
+    margin: 0;
+}
+
+.footDev {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
