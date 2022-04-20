@@ -1,13 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import '../assets/footer.css';
 import emailjs from 'emailjs-com'
 
-const Footer = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
+const Contact = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
 
-      const name = useRef(null);
-      const email = useRef(null);
-      const message = useRef(null);
       const [className, setClassName] = useState('btn_send');
       const [val, setVal] = useState("Send");
       const [btnDis, setBtnDis] = useState("");
@@ -17,8 +14,9 @@ const Footer = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
             setBtnDis("disabled");
             setClassName('btn_sending');
             setVal("Sending...");
+            emailjs.init(process.env.REACT_APP_EMAIL_USER);
             emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE, process.env.REACT_APP_EMAIL_TEMPLATE, e.target)
-                  .then((result) => {
+                  .then(() => {
                         let a = setInterval(() => {
                               setClassName('btn_send');
                               setVal("Send");
@@ -32,10 +30,6 @@ const Footer = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
                   });
             e.target.reset();
       }
-
-      useEffect(()=>{
-            emailjs.init(process.env.REACT_APP_EMAIL_USER);
-      },[]);
 
       return (
             <footer id='Contact'>
@@ -57,9 +51,9 @@ const Footer = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
                                     </tbody>
                               </table>
                               <form onSubmit={handleSend}>
-                                    <input name="name" type="text" placeholder="Your name" ref={name} required />
-                                    <input name="email" type="email" placeholder="Email" ref={email} required />
-                                    <textarea name="message" rows="7" placeholder="Message" ref={message} required></textarea>
+                                    <input name="name" type="text" placeholder="Your name" required />
+                                    <input name="email" type="email" placeholder="Email"  required />
+                                    <textarea name="message" rows="7" placeholder="Message" required></textarea>
                                     <input disabled={btnDis} type="submit" value={val} className={className} />
                               </form>
                         </div>
@@ -69,11 +63,10 @@ const Footer = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
                         <div className="footDev">
                               <span id='devCopy'>Copyright © {new Date().getFullYear()}</span>
                               <span id='devStyle'> | </span>
-                              
                               <p id='devAuth'>Developed by <a href="https://www.linkedin.com/in/zaydimr/" target="_blank" rel="noopener noreferrer" style={{ color: '#00aeef' }}>ZAYD EL IMRANI</a></p>
                         </div>
                   </div>
             </footer>
       )
 }
-export default Footer;
+export default Contact;
