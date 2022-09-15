@@ -2,4 +2,4 @@
 I haven't finished it yet ..
 
 
-Link : https://zayd.netlify.app/
+Link : https://zaydimr.me/

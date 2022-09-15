@@ -3,16 +3,15 @@ import About from './components/About'
 import NotFinished from './components/NotFinished';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-// import app from './firebase/config';
 
 function App() {
   return (
     <>
-      <Home/>
-      <About/>
-      <Experience/>
-      <NotFinished/>
-      <Contact ContactUsEmail='elimrani.z@gmail.com' ContactUsPhoneNumber='6 18 05 39 29'/>
+      <Home />
+      <About />
+      <Experience />
+      <NotFinished />
+      <Contact ContactUsEmail='elimrani.z@gmail.com' ContactUsPhoneNumber='6 18 05 39 29' />
     </>
   );
 }

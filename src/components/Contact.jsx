@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-import '../assets/footer.css';
+import '../assets/css/footer.css';
 import emailjs from 'emailjs-com'
 
 const Contact = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
@@ -52,7 +52,7 @@ const Contact = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
                               </table>
                               <form onSubmit={handleSend}>
                                     <input name="name" type="text" placeholder="Your name" required />
-                                    <input name="email" type="email" placeholder="Email"  required />
+                                    <input name="email" type="email" placeholder="Email" required />
                                     <textarea name="message" rows="7" placeholder="Message" required></textarea>
                                     <input disabled={btnDis} type="submit" value={val} className={className} />
                               </form>

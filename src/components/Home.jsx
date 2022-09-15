@@ -1,7 +1,7 @@
 import React from 'react'
-import MyLove from '../DSC_0002.png'
+import MyLove from '../assets/img/DSC_0002.png'
 import Navbar from './Navbar';
-import '../assets/home.css'
+import '../assets/css/home.css'
 import { FaFacebook, FaHackerrank, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 import { Link } from 'react-scroll'

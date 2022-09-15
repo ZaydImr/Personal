@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/experience.css';
+import '../assets/css/experience.css';
 import ExperiencePro from './ExperiencePro';
 import ExperiencePersonal from './ExperiencePersonal';
 import Headline from './Headline';
@@ -11,9 +11,9 @@ const Experience = () => {
             <div className="info">
                 <h5>Experience</h5>
                 <Headline title='Professional' />
-                <ExperiencePro/>
+                <ExperiencePro />
                 <Headline title='Personal' />
-                <ExperiencePersonal/>
+                <ExperiencePersonal />
             </div>
         </div>
     )

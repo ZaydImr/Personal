@@ -1,7 +1,7 @@
 import { collection, getDocs } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
 import { FaAngular, FaReact, FaNodeJs, FaJava, FaGitAlt } from 'react-icons/fa'
-import '../assets/about.css'
+import '../assets/css/about.css'
 import { db } from '../firebase/config'
 import Headline from './Headline'
 
