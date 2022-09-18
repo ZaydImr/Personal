@@ -75,6 +75,10 @@ body::-webkit-scrollbar-thumb {
 .line li:nth-last-of-type(1) {
   width: 7px;
 }
+.not-finished{
+  flex-direction: column;
+  align-items: center;
+}
 
 .not-finished a {
   color: var(--primary-clr);
