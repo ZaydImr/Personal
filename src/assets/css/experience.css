@@ -5,7 +5,7 @@
 }
 
 .experience-pro {
-    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .experience-pro h4 {
@@ -26,6 +26,7 @@
 
 .experience-pro .date {
     font-size: 15px;
+    font-weight: normal;
     color: #6a8285;
 }
 

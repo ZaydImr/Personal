@@ -4,32 +4,25 @@ import Headline from './Headline';
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase/config';
 
-const Experience = () => {
+const Education = () => {
 
-    const [experiences, setExperiences] = useState([]);
+    const [educations, setEducations] = useState([]);
 
     useEffect(() => {
-        // add experience
-        // experiences.forEach(experience=>{
-        //     console.log(experience);
-        //     addDoc(collection(db, 'experiences'), experience);
-        // })
-
-        getDocs(collection(db, 'experiences'))
+        getDocs(collection(db, 'education'))
             .then(res => {
-                setExperiences(res.docs.map(item => item.data()));
-            })
-
+                setEducations(res.docs.map(item => item.data()));
+            });
     }, []);
 
     return (
-        <div id='Experience' className='container'>
+        <div id='Education' className='container'>
             <div className="info">
-                <h3>Experience</h3>
+                <h3>Education</h3>
                 <Headline />
                 <div className="experiences">
                     {
-                        experiences.sort((a, b) => a.index > b.index ? 1 : -1).map(experience =>
+                        educations.sort((a, b) => a.index > b.index ? 1 : -1).map(experience =>
                             <div key={experience.index} className="experience-pro">
                                 <h4>{experience.title} |
                                     {
@@ -49,4 +42,4 @@ const Experience = () => {
     )
 }
 
-export default Experience
+export default Education

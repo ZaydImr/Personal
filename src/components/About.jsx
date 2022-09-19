@@ -44,7 +44,7 @@ const About = () => {
       return (
             <div id='About' className="about container">
                   <div className="info">
-                        <h5>About</h5>
+                        <h3>About</h3>
                         <Headline title="Me"/>
                         <div className="me">
                               <p>
@@ -66,7 +66,7 @@ const About = () => {
                                                 <div key={index} className="about-skills" >
                                                       <div className="skill-item">
                                                             <div className='skill-header'>
-                                                                  <h6>{Icon && <Icon color={skill.color} />} {skill.title}</h6>
+                                                                  <h5>{Icon && <Icon color={skill.color} />} {skill.title}</h5>
                                                                   <p>{skill.percentage}%</p>
                                                             </div>
                                                             <div className='skill-bar'>

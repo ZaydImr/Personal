@@ -1,5 +1,5 @@
 import React from 'react'
-import MyLove from '../assets/img/DSC_0002.png'
+import Me from '../assets/img/DSC_0002.png'
 import Navbar from './Navbar';
 import '../assets/css/home.css'
 import { FaFacebook, FaHackerrank, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
@@ -27,7 +27,7 @@ const Home = () => {
                               </div>
                         </div>
                         <div className="home-image">
-                              <img src={MyLove} alt='Personal img' />
+                              <img src={Me} alt='Personal img' loading="lazy" />
                         </div>
                   </div>
                   <div className="back"></div>

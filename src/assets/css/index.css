@@ -39,21 +39,20 @@ body::-webkit-scrollbar-thumb {
   max-width: var(--mw-14);
   display: flex;
   position: relative;
-  padding-top: 70px;
 }
 
 
-.info h5 {
+.info h3 {
+  margin-top: 20px;
   color: var(--primary-clr);
   font-size: 20px;
   font-weight: 600;
 }
 
-.info h3 {
+.info h4 {
   color: var(--clr-black);
-  font-size: xx-large;
+  font-size: 26px;
   font-weight: 600;
-  margin-top: 20px;
 }
 
 .line li {
@@ -88,4 +87,17 @@ body::-webkit-scrollbar-thumb {
 
 .not-finished a:hover {
   color: var(--clr-black);
+}
+
+.certificate-item{
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: var(--clr-black);
+  padding: 1rem;
+  border-radius: 7px;
+  display: block;
+}
+.certificate-img{
+  width: 100%;
+  border-radius: 5px;
 }

@@ -35,7 +35,7 @@ const Contact = ({ ContactUsEmail, ContactUsPhoneNumber }) => {
             <footer id='Contact'>
                   <div className="footContact">
                         <h2>Contact Me</h2><br />
-                        <h4>I'd ❤️ to help!</h4>
+                        <h3 style={{fontSize:16}}>I'd ❤️ to help!</h3>
                         <p>I like to create things with fun, open-minded person. Feel free to say hello!</p><br />
                         <div className="contact_frm">
                               <table>
