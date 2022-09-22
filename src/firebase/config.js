@@ -2,8 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore'
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIRE_APIKEY,
   authDomain: process.env.REACT_APP_FIRE_AUTHDOMAIN,
