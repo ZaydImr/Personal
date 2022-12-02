@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Headline = ({title}) => {
+const Headline = (props: { title?: string }) => {
     return (
         <>
-            {title && <h4>{title}</h4>}
+            {props.title && <h4>{props.title}</h4>}
             <ul className="line">
                 <li></li>
                 <li></li>

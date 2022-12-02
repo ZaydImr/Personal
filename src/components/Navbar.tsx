@@ -9,7 +9,7 @@ const Navbar = () => {
       const [top, setTop] = useState(true);
 
       useEffect(() => {
-            let event;
+            let event:any;
             window.removeEventListener('scroll', event);
             event = window.addEventListener('scroll', () => {
                   if (window.scrollY <= 1) {

@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react'
 import Headline from './Headline'
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase/config';
+import { Certification } from '../models/certifications';
 
 const Certifications = () => {
 
-    const [certifications, setCertifications] = useState([]);
+    const [certifications, setCertifications] = useState<Certification[]>([]);
 
     useEffect(() => {
         getDocs(collection(db, 'certifications'))
             .then(res => {
-                setCertifications(res.docs.map(item => item.data()));
+                setCertifications(res.docs.map(item => item.data()) as Certification[]);
             });
     }, []);
 

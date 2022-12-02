@@ -3,15 +3,16 @@ import '../assets/css/experience.css';
 import Headline from './Headline';
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase/config';
+import { Education } from '../models/education';
 
-const Education = () => {
+const Educations = () => {
 
-    const [educations, setEducations] = useState([]);
+    const [educations, setEducations] = useState<Education[]>([]);
 
     useEffect(() => {
         getDocs(collection(db, 'education'))
             .then(res => {
-                setEducations(res.docs.map(item => item.data()));
+                setEducations(res.docs.map(item => item.data()) as Education[]);
             });
     }, []);
 
@@ -42,4 +43,4 @@ const Education = () => {
     )
 }
 
-export default Education
+export default Educations

@@ -1,8 +1,12 @@
 {
   "name": "zayd-el-imrani",
-  "version": "0.1.0",
+  "version": "0.5.1",
   "private": true,
   "dependencies": {
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
     "emailjs-com": "^3.2.0",
     "firebase": "^9.6.11",
     "react": "^18.2.0",
@@ -10,6 +14,7 @@
     "react-icons": "^4.2.0",
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.7",
+    "typescript": "^4.9.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -35,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.5"
   }
 }

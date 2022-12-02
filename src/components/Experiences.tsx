@@ -3,23 +3,14 @@ import '../assets/css/experience.css';
 import Headline from './Headline';
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase/config';
+import { Experience } from '../models/experience';
 
-const Experience = () => {
+const Experiences = () => {
 
-    const [experiences, setExperiences] = useState([]);
+    const [experiences, setExperiences] = useState<Experience[]>([]);
 
     useEffect(() => {
-        // add experience
-        // experiences.forEach(experience=>{
-        //     console.log(experience);
-        //     addDoc(collection(db, 'experiences'), experience);
-        // })
-
-        getDocs(collection(db, 'experiences'))
-            .then(res => {
-                setExperiences(res.docs.map(item => item.data()));
-            })
-
+        getDocs(collection(db, 'experiences')).then(res => setExperiences(res.docs.map(item => item.data()) as Experience[]));
     }, []);
 
     return (
@@ -39,7 +30,7 @@ const Experience = () => {
                                     }
                                     <span className='date'> {experience.dateBegin} - {experience.dateEnd || 'Present'}</span>
                                 </h4>
-                                <div>{experience.description && experience.description.map((desc, index) => <p key={index} style={{paddingLeft:15}}>{desc}</p>)}</div>
+                                <div>{experience.description && experience.description.map((desc, index) => <p key={index} style={{ paddingLeft: 15 }}>{desc}</p>)}</div>
                             </div>
                         )
                     }
@@ -49,4 +40,4 @@ const Experience = () => {
     )
 }
 
-export default Experience
+export default Experiences

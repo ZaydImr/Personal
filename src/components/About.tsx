@@ -3,15 +3,17 @@ import React, { useEffect, useState } from 'react'
 import { FaAngular, FaReact, FaNodeJs, FaJava, FaGitAlt } from 'react-icons/fa'
 import '../assets/css/about.css'
 import { db } from '../firebase/config'
+import { Icon } from '../models/icon'
+import { Skill } from '../models/skill'
 import Headline from './Headline'
 
 const About = () => {
 
-      const [skills, setSkills] = useState([]);
+      const [skills, setSkills] = useState<Skill[]>([]);
 
-      const descriptionJob = "I am using .NET / Spring-boot for the backend , I have experience in various JavaScript frameworks and libraries ( ReactJs / Angular / Vue / ... ) and I have experience with SQL and NoSQL databases .";
-      const descriptionPersonal = "I'm passionate about optimizing algorithms, discovering new technologies. I love to write clean, readable code while implementing coding best practices . I adore solve problems.";
-      const icons = [
+      const descriptionJob: string = "I am using .NET / Spring-boot for the backend , I have experience in various JavaScript frameworks and libraries ( ReactJs / Angular / Vue / ... ) and I have experience with SQL and NoSQL databases .";
+      const descriptionPersonal: string = "I'm passionate about optimizing algorithms, discovering new technologies. I love to write clean, readable code while implementing coding best practices . I adore solve problems.";
+      const icons: Icon[] = [
             { icon: FaAngular, name: 'FaAngular' },
             { icon: FaReact, name: 'FaReact' },
             { icon: FaNodeJs, name: 'FaNodeJs' },
@@ -20,32 +22,14 @@ const About = () => {
       ];
 
       useEffect(() => {
-            // setSkills([
-            //       { title: 'Angular', icon: 'FaAngular', percentage: 85, color: '#B52E31' },
-            //       { title: 'React', icon: 'FaReact', percentage: 70 },
-            //       { title: 'NodeJs', icon: 'FaNodeJs', percentage: 85, color: '#68a063' },
-            //       { title: 'Spring boot', icon: 'FaJava', percentage: 78, color: 'red' },
-            //       { title: '.NET CORE API', percentage: 78, color: 'blue' },
-            // ]);
-
-            // await setDoc(doc(db,'skills', 'one'),{ title: 'NodeJs', icon: 'FaNodeJs', percentage: 85, color: '#68a063' });
-
-            // skills.forEach( element => {
-            //       addDoc(collection(db, 'skills'), element);
-            // });
-
-            getDocs(collection(db, 'skills')).then(res => {
-                  setSkills(res.docs.map(item => item.data()));
-            })
+            getDocs(collection(db, 'skills')).then(res => setSkills(res.docs.map(item => item.data()) as Skill[]))
       }, []);
-
-
 
       return (
             <div id='About' className="about container">
                   <div className="info">
                         <h3>About</h3>
-                        <Headline title="Me"/>
+                        <Headline title="Me" />
                         <div className="me">
                               <p>
                                     I am Fullstack developer at
@@ -57,7 +41,7 @@ const About = () => {
                               <p>{descriptionJob}</p>
                               <p>{descriptionPersonal}</p>
                         </div>
-                        <Headline title="Skills"/>
+                        <Headline title="Skills" />
                         <div className="skills">
                               {
                                     skills.sort((a, b) => a.percentage < b.percentage ? 1 : -1).map((skill, index) => {
