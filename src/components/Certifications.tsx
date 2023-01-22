@@ -18,7 +18,7 @@ const Certifications = () => {
 
     return (
         <div id='Certifications' className="about container">
-            <div className="info">
+            <div className="info hidden">
                 <h3>Certifications</h3>
                 <Headline />
                 <div className="skills" style={{marginTop:20}}>

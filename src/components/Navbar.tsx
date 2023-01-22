@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/logo.webp'
 import { FaBars } from 'react-icons/fa'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import '../assets/css/navbar.css'

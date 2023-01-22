@@ -15,7 +15,7 @@ const Experiences = () => {
 
     return (
         <div id='Experience' className='container'>
-            <div className="info">
+            <div className="info hidden">
                 <h3>Experience</h3>
                 <Headline />
                 <div className="experiences">

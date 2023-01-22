@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from '../assets/img/DSC_0002.png'
+import Me from '../assets/img/me.webp'
 import Navbar from './Navbar';
 import '../assets/css/home.css'
 import { FaFacebook, FaHackerrank, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
@@ -17,19 +17,19 @@ const Home = () => {
                         <a className='social-link' target='_blank' href='https://www.instagram.com/zayd.imr/' rel="noreferrer"><FaInstagram /><span className="tooltiptext">Instagram</span></a>
                         <a className='social-link' target='_blank' href='https://www.facebook.com/Zayd.imr/' rel="noreferrer"><FaFacebook /><span className="tooltiptext">Facebook</span></a>
                   </div>
-                  <div className="container">
+                  <section className="container">
                         <div className="home-content">
-                              <div className="content">
+                              <div className="content hidden">
                                     <h4>Hello I'm</h4>
                                     <h2>Zayd EL IMRANI</h2>
                                     <h1 className='span_content'>Fullstack developer - Software Engineer student</h1><br />
                                     <Link to='About' smooth='true'><input type="button" value="About me" /></Link>
                               </div>
                         </div>
-                        <div className="home-image">
-                              <img src={Me} alt='Personal img' loading="lazy" />
+                        <div className="home-image hidden">
+                              <img src={Me} alt='Personal img' />
                         </div>
-                  </div>
+                  </section>
                   <div className="back"></div>
             </div>
       )

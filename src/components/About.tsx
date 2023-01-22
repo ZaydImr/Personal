@@ -28,39 +28,43 @@ const About = () => {
       return (
             <div id='About' className="about container">
                   <div className="info">
-                        <h3>About</h3>
-                        <Headline title="Me" />
-                        <div className="me">
-                              <p>
-                                    I am Fullstack developer at
-                                    <a href="https://www.nttdata.com/global/en/" target="_blank" rel="noopener noreferrer">NTT-DATA</a>
-                                    also a student of Software Engineer in
-                                    <a href="https://enstetouan.ma/" target="_blank" rel="noopener noreferrer">ENS Tetouan</a>
-                                    .
-                              </p>
-                              <p>{descriptionJob}</p>
-                              <p>{descriptionPersonal}</p>
+                        <div className='hidden'>
+                              <h3>About</h3>
+                              <Headline title="Me" />
+                              <div className="me">
+                                    <p>
+                                          I am Fullstack developer at
+                                          <a href="https://www.nttdata.com/global/en/" target="_blank" rel="noopener noreferrer">NTT-DATA</a>
+                                          also a student of Software Engineer in
+                                          <a href="https://enstetouan.ma/" target="_blank" rel="noopener noreferrer">ENS Tetouan</a>
+                                          .
+                                    </p>
+                                    <p>{descriptionJob}</p>
+                                    <p>{descriptionPersonal}</p>
+                              </div>
                         </div>
-                        <Headline title="Skills" />
-                        <div className="skills">
-                              {
-                                    skills.sort((a, b) => a.percentage < b.percentage ? 1 : -1).map((skill, index) => {
-                                          const Icon = icons.find(icon => icon.name === skill.icon)?.icon || null;
-                                          return (
-                                                <div key={index} className="about-skills" >
-                                                      <div className="skill-item">
-                                                            <div className='skill-header'>
-                                                                  <h5>{Icon && <Icon color={skill.color} />} {skill.title}</h5>
-                                                                  <p>{skill.percentage}%</p>
-                                                            </div>
-                                                            <div className='skill-bar'>
-                                                                  <div className='progress-line' style={{ width: (skill.percentage + '%'), backgroundColor: skill.color }}></div>
+                        <div className='hidden'>
+                              <Headline title="Skills" />
+                              <div className="skills">
+                                    {
+                                          skills.sort((a, b) => a.percentage < b.percentage ? 1 : -1).map((skill, index) => {
+                                                const Icon = icons.find(icon => icon.name === skill.icon)?.icon || null;
+                                                return (
+                                                      <div key={index} className="about-skills" >
+                                                            <div className="skill-item">
+                                                                  <div className='skill-header'>
+                                                                        <h5>{Icon && <Icon color={skill.color} />} {skill.title}</h5>
+                                                                        <p>{skill.percentage}%</p>
+                                                                  </div>
+                                                                  <div className='skill-bar'>
+                                                                        <div className='progress-line' style={{ width: (skill.percentage + '%'), backgroundColor: skill.color }}></div>
+                                                                  </div>
                                                             </div>
                                                       </div>
-                                                </div>
-                                          )
-                                    })
-                              }
+                                                )
+                                          })
+                                    }
+                              </div>
                         </div>
                   </div>
             </div>

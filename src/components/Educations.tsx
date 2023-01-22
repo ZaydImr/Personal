@@ -18,7 +18,7 @@ const Educations = () => {
 
     return (
         <div id='Education' className='container'>
-            <div className="info">
+            <div className="info hidden">
                 <h3>Education</h3>
                 <Headline />
                 <div className="experiences">
