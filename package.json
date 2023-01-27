@@ -2,6 +2,7 @@
   "name": "zayd-el-imrani",
   "version": "0.5.1",
   "private": true,
+  "license": "LICENSE.md",
   "dependencies": {
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.10",
