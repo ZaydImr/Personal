@@ -1,5 +1,2 @@
 User-agent: *
-Allow: /
-Allow: /?
-Allow: /index.html?
-Allow: /static/
+Disallow:
