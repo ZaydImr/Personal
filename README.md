@@ -1,4 +1,4 @@
-## My portfolio , I create it with ReactJs, JavaScript, CSS, Git.
+## My portfolio , I create it with ReactJs, TypeScript / JavaScript, CSS, Git.
 
 
 Link : https://zaydimr.me/

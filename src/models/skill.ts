@@ -1,7 +1,8 @@
 export interface Skill {
     title: string;
     icon: string;
-    percentage: number;
+    percentage?: number;
+    index: number;
     color: string
 }
 

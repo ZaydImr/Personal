@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .info h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   color: var(--primary-clr);
   font-size: 20px;
   font-weight: 600;

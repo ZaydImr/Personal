@@ -101,7 +101,7 @@
     font-family: montserrat, sans-serif;
     margin-top: 30px;
     font-weight: 600;
-    padding: 20px 40px;
+    padding: 15px 30px;
     border-radius: 5px;
     border: 0;
     background-color: var(--primary-clr);
@@ -112,7 +112,7 @@
 
 .home-content input:hover {
     background-color: var(--clr-black);
-    padding: 22px 45px;
+    padding: 20px 35px;
     font-size: 19px;
 }
 
