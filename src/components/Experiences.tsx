@@ -33,7 +33,10 @@ const Experiences = () => {
                                         }
                                         <span className='date'> {experience.dateBegin} - {experience.dateEnd || 'Present'}</span>
                                     </h4>
-                                    <div className='description'>{experience.description && experience.description.map((desc, index) => <p key={index} style={{ paddingLeft: 15 }}>{desc}</p>)}</div>
+                                    <div className='description'>
+                                        {experience.description && experience.description
+                                            .map((desc, index) => <p key={index} style={{ paddingLeft: 15 }}>• {desc}</p>)}
+                                    </div>
                                 </div>
                             </div>
                         )
