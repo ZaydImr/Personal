@@ -22,7 +22,7 @@ const Home = () => {
                               <div className="content hidden">
                                     <h4>Hello I'm</h4>
                                     <h2>Zayd EL IMRANI</h2>
-                                    <h1 className='span_content'>Fullstack developer - Software Engineer student</h1><br />
+                                    <h1 className='span_content'>Fullstack Angular / .NET Engineer</h1><br />
                                     <Link to='About' smooth='true'><input type="button" value="About me" /></Link>
                               </div>
                         </div>
