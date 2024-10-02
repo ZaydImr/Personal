@@ -9,7 +9,7 @@ const NotFinished = () => {
                 <a href="https://github.com/ZaydImr" target="_blank" rel="noopener noreferrer" className='social-link' style={{position: 'relative', padding: 0, paddingLeft: '1rem'}}><FaGithub /><span className="tooltiptext">Github</span></a>
             </div>
             <div style={{ marginBottom: '2rem', marginTop: "2rem" }}>
-                <a href="https://drive.google.com/file/d/1jDnyDgvCBZ0tOsr6daTnxx4F_yR_7SAa/view?usp=sharing" target="_blank" rel="noopener noreferrer">Check my resume (CV) here</a>
+                <a href="https://drive.google.com/file/d/1cKoaPUrLks92hBfQj2EngTmkhfbF7HHL/view?usp=sharing" target="_blank" rel="noopener noreferrer">Check my resume (CV) here</a>
             </div>
         </div>
     )
